@@ -11,82 +11,15 @@
 }
 
 body {
-  font-family: "Bebas Neue", sans-serif;
-  border-top: 10px solid #ffa94d;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  background-color: #ff6b6b;
+  background-color: #adb5bd;
 }
-
-.container {
-  width: 1200px;
-  height: auto;
-  margin: auto;
-  background-color: #f7f7f7;
-}
-
-h1 {
-  font-size: 90.44px;
-}
-
-/* ************* */
-/* UNIVERSAL NAV */
-/* ************* */
 
 nav {
-  padding: 20px;
-  background-color: #ff8787;
-  font-size: 22.62px;
-  margin-bottom: 40px;
+  padding: 40px;
+  background-color: #ced4da;
+  border-bottom: solid 2px #868e96;
 
-  display: flex;
-  justify-content: flex-end;
-  gap: 50px;
-  align-items: center;
-}
-
-nav a:link,
-nav a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:active,
-nav a:hover {
-  color: #ffa94d;
-  text-decoration: none;
-}
-
-nav a:last-child {
-  margin-right: 50px;
-}
-
-/* ******************* */
-/* INDEX PAGE - HEADER */
-/* ******************* */
-
-.hero {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 25px;
-  background-color: #ffa94d;
-}
-
-.hero-content_wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.hero p {
-  font-size: 31.99px;
-}
-
-.hero h1 {
-  align-items: flex-start;
   text-align: center;
-}
-
-.hero img {
-  width: 50%;
-  border-radius: 30px;
 }
