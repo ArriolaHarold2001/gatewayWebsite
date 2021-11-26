@@ -1,5 +1,9 @@
 /* FONT SIZES */
-/* 90.44px, 63.96px, 45.23px, 31.99px, 22.62px, 16.00px, 11.32px, 8.00px, 5.66px */
+/* 3.052rem/54.93px, 2.441rem/43.95px, 1.953rem/35.16px, 1.563rem/28.13px, 1.25rem/22.50px, 1rem/18.00px,
+   0.8rem/14.40px, 0.64rem/11.52px, 0.512rem/9.22px */
+
+/* FONT WEIGHT */
+/* NORMAL:400, MEDIUM:500, SEMI-BOLD:600 BOLD:700 */
 
 /* ************** */
 /* GENERAL STYLES */
@@ -12,14 +16,201 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  background-color: #adb5bd;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff5f5;
 }
 
-nav {
-  padding: 40px;
-  background-color: #ced4da;
-  border-bottom: solid 2px #868e96;
+h1 {
+  font-size: 3.052rem;
+}
+h2 {
+  font-size: 2.441rem;
+}
+h3 {
+  font-size: 1.953rem;
+}
+h4 {
+  font-size: 1.563;
+}
+h5 {
+  font-size: 1.25rem;
+}
 
+/* UNIVERSAL NAV */
+/* ************* */
+nav {
+  padding: 10px;
+  background-color: #fff5f5;
+  border-bottom: solid 2px #f03e3e;
+  font-size: 1.563rem;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a:last-child {
+  margin-right: 20px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-section_main a:link,
+.nav-section_main a:visited {
+  color: #212529;
+}
+
+.nav-section_main a:hover,
+.nav-section_main a:active {
+  color: #fff5f5;
+  text-shadow: -1px -1px 4px #d9480f, 2px -2px 3px #2b8a3e, -3px 3px 2px #c92a2a,
+    4px 4px 1px #1864ab;
+}
+
+.nav-section_logo a:link,
+.nav-section_logo a:visited {
+  margin-left: 20px;
+  color: #fff5f5;
+  text-shadow: -2px -2px 8px #1864ab, 4px -4px 6px #c92a2a, -6px 6px 4px #2b8a3e,
+    8px 8px 2px #d9480f;
+}
+
+.nav-section_logo a:hover,
+.nav-section_logo a:active {
+  color: #fff5f5;
+  text-shadow: -2px -2px 8px #d9480f, 4px -4px 6px #2b8a3e, -6px 6px 4px #c92a2a,
+    8px 8px 2px #1864ab;
+}
+
+.nav-section_spacer {
+  display: flex;
+  gap: 25px;
+}
+
+/* UNIVERSAL HERO */
+/* ************** */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 0 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  color: #fff5f5;
+  text-shadow: -2px -2px 8px #1864ab, 4px -4px 6px #c92a2a, -6px 6px 4px #2b8a3e,
+    8px 8px 2px #d9480f;
+  text-transform: uppercase;
+}
+
+.hero-section_spacer {
+  color: #fff5f5;
+  background-color: rgba(33, 37, 41, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  line-height: 1.563rem;
+  text-shadow: -1px -1px 1px #212529, 1px -1px 1px #212529, -1px 1px 1px #212529,
+    1px 1px 1px #212529;
+
+  display: flex;
+  width: 350px;
+}
+
+/* ************ */
+/* LANDING PAGE */
+/* ************ */
+
+.hero-section_main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("img/people/Abbey_Andy_modelshoot01-100719-5858.jpg");
+}
+
+/* LANDONG SECTION 01 FIRE PRINTS */
+/* ****************************** */
+.featured-section_main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 10px;
+  padding: 60px 0;
+  text-transform: uppercase;
+
+  background-color: #c92a2a;
+  color: #fff5f5;
+}
+
+.featured-item {
   text-align: center;
 }
+
+.featured-section_main img,
+.featured-section_second img {
+  width: 100%;
+  height: auto;
+  border: solid 1px white;
+}
+
+.featured-section_heading {
+  grid-column: 1 / 5;
+  text-align: center;
+}
+
+/* LANDONG SECTION 02 LEATHER COLLECTION */
+/* ************************************* */
+
+.featured-section_second {
+  display: grid;
+  grid-template-columns: 1fr 332px 332px;
+  justify-items: center;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 10px;
+  padding: 60px 0;
+  text-transform: uppercase;
+
+  /* background-color: #d9480f; */
+  background-color: #212529;
+  color: #fff5f5;
+}
+
+/* TESTIMONIAL SECTION */
+/* ******************* */
+
+/* ********* */
+/* SHOP PAGE */
+/* ********* */
+
+/* SHOP PAGE HERO */
+/* ************** */
+.hero-section_second {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("img/people/cuz-kat_073119-4667.jpg");
+}
+
+/* ************ */
+/* CONTACT PAGE */
+/* ************ */
+
+/* **************** */
+/* UNIVERSAL FOOTER */
+/* **************** */
