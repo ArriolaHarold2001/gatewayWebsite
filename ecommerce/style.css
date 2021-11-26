@@ -196,6 +196,10 @@ a:visited {
 /* TESTIMONIAL SECTION */
 /* ******************* */
 
+.testimonial-img {
+  width: 100vh;
+}
+
 /* ********* */
 /* SHOP PAGE */
 /* ********* */
@@ -214,3 +218,7 @@ a:visited {
 /* **************** */
 /* UNIVERSAL FOOTER */
 /* **************** */
+
+.footer-img {
+  width: 100vh;
+}
