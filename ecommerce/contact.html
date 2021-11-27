@@ -32,38 +32,73 @@
       <h1>NucaPrints | Contact</h1>
     </header>
 
-    <div class="contact-form_container">
-      <form class="contact-form">
-        <div class="form-item">
-          <label>Full Name</label>
-          <input placeholder="Full Name" />
-        </div>
-        <div class="form-item">
-          <label>Email</label>
-          <input placeholder="Email" />
-        </div>
-        <div class="form-item">
-          <label>Comments</label>
-          <textarea
-            rows="5"
-            cols="33"
-            placeholder="Leave us a comment"
-          ></textarea>
-        </div>
-      </form>
-    </div>
+    <form class="contact-form">
+      <div class="form-item form-item--01">
+        <label>First Name</label>
+        <input
+          placeholder="First Name"
+          type="text"
+          required="required"
+          name="name"
+        />
+      </div>
+      <div class="form-item form-item--02">
+        <label>Last Name</label>
+        <input
+          placeholder="Last Name"
+          type="text"
+          required="required"
+          name="name"
+        />
+      </div>
+      <div class="form-item form-item--03">
+        <label>Email</label>
+        <input
+          placeholder="Email"
+          type="email"
+          required="required"
+          name="email"
+        />
+      </div>
+      <div class="form-item form-item--04">
+        <label>Phone Number</label>
+        <input
+          placeholder="XXXXXXXXXX"
+          type="text"
+          pattern="[0-9]{10}"
+          required="required"
+          name="phoneNumber"
+        />
+      </div>
+      <div class="form-item form-item--05">
+        <label>Comments</label>
+        <textarea
+          rows="5"
+          cols="33"
+          placeholder="Leave us a comment"
+          name="comment"
+        ></textarea>
+
+        <button class="form-btn form-item_06" type="submit" name="submit">
+          Send
+        </button>
+      </div>
+    </form>
     <!-- **************** -->
     <!-- UNIVERSAL FOOTER -->
     <!-- **************** -->
-    <footer>
-      <div>
+    <footer class="main-footer_container">
+      <div class="main-footer_item">
+        <a href="index.html">Home</a>
+        <a href="product.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="main-footer_item">
         <img
-          src="img/logo/Untitled-1.png"
+          src="img/logo/nucaprints-logo_white.png"
           alt="NucaPrints logo"
           class="footer-img"
         />
-      </div>
-      <div>
         <p>&copy; 2021 NucaPrints</p>
       </div>
     </footer>

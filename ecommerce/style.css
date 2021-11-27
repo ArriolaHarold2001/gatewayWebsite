@@ -304,24 +304,124 @@ a:visited {
 /* FORM STYLING */
 /* ************ */
 
-.contact-form_container {
-  background-color: red;
-  margin: auto;
-  width: 1200px;
-  height: 750px;
-}
-
-.contact-form {
-  padding: 50px;
-}
-
 .form-item {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  height: 100vh;
+  padding: 60px 60px;
+  font-size: 3.052rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form-item input {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  color: #fff5f5;
+  border: none;
+}
+
+input[type="text"] {
+  font-size: 2.441rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+input[type="email"] {
+  font-size: 2.441rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-item textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  font-size: 2.441rem;
+  font-weight: 500;
+  color: #fff5f5;
+  margin-bottom: 250px;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+  outline: none;
+}
+
+.form-btn {
+  width: 100%;
+  height: 10vh;
+  color: #212529;
+  background-color: #087f5b;
+  border: none;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  font-size: 2.441rem;
+  font-weight: 500;
+
+  box-shadow: 0px 3px 10px#212529;
+}
+
+.form-btn:hover {
+  color: #fff5f5;
+  background-color: #6bb29d;
+}
+.form-btn:active {
+  color: #fff5f5;
+  background-color: #054c37;
+}
+
+.form-item--01 {
+  background-color: #c92a2a;
+}
+.form-item--02 {
+  background-color: #d9480f;
+}
+.form-item--03 {
+  background-color: #1864ab;
+}
+.form-item--04 {
+  background-color: #2b8a3e;
+}
+.form-item--05 {
+  background-color: #087f5b;
 }
 
 /* **************** */
 /* UNIVERSAL FOOTER */
 /* **************** */
+
+.main-footer_container {
+  height: 45vh;
+  border-top: 5px solid #f03e3e;
+  background-color: #212529;
+  color: #fff5f5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-footer_item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.main-footer_item a:link,
+.main-footer_item a:visited {
+  color: #fff5f5;
+}
+
+.main-footer_item a:hover,
+.main-footer_item a:active {
+  color: #f03e3e;
+}
 
 .footer-img {
   width: 100px;
