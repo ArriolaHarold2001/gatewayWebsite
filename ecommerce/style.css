@@ -426,3 +426,38 @@ input[type="email"] {
 .footer-img {
   width: 100px;
 }
+
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
+
+/* IPAD PRO -TABLET  */
+/* ***************** */
+
+@media screen and (max-width: 800px) {
+  nav {
+    width: 1366px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+/* PHONE BIG*/
+/* ****** */
+
+@media screen and (max-width: 414px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* PHONE SMALL*/
+/* ****** */
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: blue;
+  }
+}
