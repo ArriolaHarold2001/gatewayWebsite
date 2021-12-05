@@ -79,7 +79,7 @@ a:visited {
 .nav-section_main a:active {
   color: #fff5f5;
   text-shadow: -0.1rem -0.1rem 0.4rem #d9480f, 0.2rem -0.2rem 0.3rem #2b8a3e,
-    -0.3rem 0.3rem 0.2rem #c92a2a, 4px 4px 1px #1864ab;
+    -0.3rem 0.3rem 0.2rem #c92a2a, 0.4rem 0.4rem 0.1rem #1864ab;
 }
 
 .nav-section_logo a:link,
@@ -99,7 +99,7 @@ a:visited {
 
 .nav-section_spacer {
   display: flex;
-  gap: 25px;
+  gap: 2.5rem;
 }
 
 /* UNIVERSAL HERO */
@@ -108,7 +108,7 @@ a:visited {
 .hero {
   width: 100%;
   height: 100vh;
-  padding: 0 100px;
+  padding: 0 10rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,27 +116,27 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .hero h1 {
   color: #fff5f5;
-  text-shadow: -2px -2px 8px #1864ab, 4px -4px 6px #c92a2a, -6px 6px 4px #2b8a3e,
-    8px 8px 2px #d9480f;
+  text-shadow: -0.2rem -0.2rem 0.8rem #1864ab, 0.4rem -0.4rem 0.6rem #c92a2a,
+    -0.6rem 0.6rem 0.4rem #2b8a3e, 0.8rem 0.8rem 0.2rem #d9480f;
   text-transform: uppercase;
 }
 
 .hero-section_spacer {
   color: #fff5f5;
   background-color: rgba(33, 37, 41, 0.5);
-  border-radius: 5px;
-  padding: 5px;
-  line-height: 1.563rem;
-  text-shadow: -1px -1px 1px #212529, 1px -1px 1px #212529, -1px 1px 1px #212529,
-    1px 1px 1px #212529;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  line-height: 1.8rem;
+  text-shadow: -0.1rem -0.1rem 0.1rem #212529, 0.1rem -0.1rem 0.1rem #212529,
+    -0.1rem 0.1rem 0.1rem #212529, 0.1rem 0.1rem 0.1rem #212529;
 
   display: flex;
-  width: 350px;
+  width: 35rem;
 }
 
 /* ************ */
@@ -155,9 +155,9 @@ a:visited {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
-  row-gap: 40px;
-  column-gap: 10px;
-  padding: 60px 0;
+  row-gap: 4rem;
+  column-gap: 1rem;
+  padding: 6rem 0;
   text-transform: uppercase;
 
   background-color: #c92a2a;
@@ -172,7 +172,7 @@ a:visited {
 .featured-section_second img {
   width: 100%;
   height: auto;
-  border: solid 1px white;
+  border: 0.1rem solid white;
 }
 
 .featured-section_heading {
@@ -185,18 +185,18 @@ a:visited {
 
 .featured-section_second {
   display: grid;
-  grid-template-columns: 1fr 332px 332px;
+  grid-template-columns: 1fr 33.2rem 33.2rem;
   justify-items: center;
   align-items: center;
-  row-gap: 40px;
-  column-gap: 10px;
-  padding: 60px 0;
+  row-gap: 4rem;
+  column-gap: 1rem;
+  padding: 6rem 0;
   text-transform: uppercase;
 
   /* background-color: #d9480f; */
   background-color: #212529;
   color: #fff5f5;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 /* TESTIMONIAL SECTION */
@@ -205,8 +205,8 @@ a:visited {
 .carousel-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 40px;
+  column-gap: 1rem;
+  row-gap: 4rem;
 
   text-align: center;
   text-transform: uppercase;
@@ -220,13 +220,13 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  border: 2px solid #fff5f5;
+  gap: 0.5rem;
+  border: 0.2rem solid #fff5f5;
 }
 
 .testimonial-img {
   width: 60%;
-  border-radius: 30px;
+  border-radius: 3rem;
 }
 
 /* ********* */
@@ -240,35 +240,33 @@ a:visited {
   text-align: center;
   text-transform: uppercase;
   color: #212529;
-  text-shadow: -1px -1px 1px #1864ab, 1px -1px 1px #2b8a3e, -1px 1px 1px #c92a2a,
-    1px 1px 1px #d9480f;
-  padding: 60px;
-  column-gap: 12px;
-  row-gap: 150px;
+  padding: 6rem;
+  column-gap: 1.2rem;
+  row-gap: 15rem;
 }
 
 .shop-section_grid h2 {
   /* font-size: 1.25rem; */
-  font-size: 1.563rem;
+  font-size: 3.2rem;
   font-weight: 500;
 }
 .shop-section_grid p {
-  font-size: 1.563rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
 .shop-nav {
   grid-column: 1/4;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
 
   display: flex;
-  gap: 50px;
+  gap: 5rem;
   align-items: center;
   justify-content: space-between;
 
-  padding: 15px 55px;
-  border-bottom: 1px solid #212529;
+  padding: 1.5rem 5.5rem;
+  border-bottom: 0.1rem solid #212529;
   /* position: fixed; */
 }
 
@@ -278,13 +276,13 @@ a:visited {
 }
 
 .shop-svg {
-  width: 20px;
+  width: 2rem;
 }
 
 .shop-img {
   width: 100%;
-  border: 2px solid #fff5f5;
-  box-shadow: 0px 5px 10px#212529;
+  border: 0.2rem solid #fff5f5;
+  box-shadow: 0rem 0.5rem 1rem#212529;
 }
 
 /* SHOP PAGE HERO */
@@ -313,30 +311,30 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 2rem;
 
   height: 100vh;
-  padding: 60px 60px;
-  font-size: 3.052rem;
+  padding: 6rem 6rem;
+  font-size: 3.2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .form-item input {
   width: 100%;
-  height: 100px;
+  height: 10rem;
   background-color: transparent;
   color: #fff5f5;
   border: none;
 }
 
 input[type="text"] {
-  font-size: 2.441rem;
+  font-size: 2.4rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 input[type="email"] {
-  font-size: 2.441rem;
+  font-size: 2.4rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -345,10 +343,10 @@ input[type="email"] {
   border: none;
   background-color: transparent;
   resize: none;
-  font-size: 2.441rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #fff5f5;
-  margin-bottom: 250px;
+  margin-bottom: 25rem;
 }
 
 .form-item input:focus,
@@ -368,7 +366,7 @@ input[type="email"] {
   font-size: 2.441rem;
   font-weight: 500;
 
-  box-shadow: 0px 3px 10px#212529;
+  box-shadow: 0rem 0.3rem 1rem#212529;
 }
 
 .form-btn:hover {
@@ -402,7 +400,7 @@ input[type="email"] {
 
 .main-footer_container {
   height: 45vh;
-  border-top: 5px solid #f03e3e;
+  border-top: 0.5rem solid #f03e3e;
   background-color: #212529;
   color: #fff5f5;
 
@@ -415,7 +413,7 @@ input[type="email"] {
 .main-footer_item {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
 }
 
 .main-footer_item a:link,
@@ -429,7 +427,7 @@ input[type="email"] {
 }
 
 .footer-img {
-  width: 100px;
+  width: 10rem;
 }
 
 /* ************* */
@@ -445,7 +443,7 @@ input[type="email"] {
   }
 
   nav {
-    width: 1366px;
+    width: 136.6rem;
   }
 
   img {
