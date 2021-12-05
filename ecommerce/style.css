@@ -1,9 +1,10 @@
-/* FONT SIZES */
-/* 3.052rem/54.93px, 2.441rem/43.95px, 1.953rem/35.16px, 1.563rem/28.13px, 1.25rem/22.50px, 1rem/18.00px,
-   0.8rem/14.40px, 0.64rem/11.52px, 0.512rem/9.22px */
+/* FONT SIZES 
+4 / 6 / 8 / 10 / 13 / 18 / 24 / 32 / 42 / 56
 
-/* FONT WEIGHT */
-/* NORMAL:400, MEDIUM:500, SEMI-BOLD:600 BOLD:700 */
+FONT WEIGHT 
+NORMAL:400, MEDIUM:500, SEMI-BOLD:600 BOLD:700 
+
+*/
 
 /* ************** */
 /* GENERAL STYLES */
@@ -14,35 +15,39 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 400;
   background-color: #fff5f5;
 }
 
 h1 {
-  font-size: 3.052rem;
+  font-size: 5.6rem;
 }
 h2 {
-  font-size: 2.441rem;
+  font-size: 4.2rem;
 }
 h3 {
-  font-size: 1.953rem;
+  font-size: 3.2rem;
 }
 h4 {
-  font-size: 1.563;
+  font-size: 2.4rem;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 2.4rem;
 }
 
 /* UNIVERSAL NAV */
 /* ************* */
 nav {
-  padding: 10px;
+  padding: 1rem;
   background-color: #fff5f5;
-  border-bottom: solid 2px #f03e3e;
+  border-bottom: 0.2rem solid #f03e3e;
   font-size: 1.563rem;
   font-weight: 600;
   position: fixed;
@@ -54,7 +59,7 @@ nav {
 }
 
 nav a:last-child {
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 a:link,
@@ -73,23 +78,23 @@ a:visited {
 .nav-section_main a:hover,
 .nav-section_main a:active {
   color: #fff5f5;
-  text-shadow: -1px -1px 4px #d9480f, 2px -2px 3px #2b8a3e, -3px 3px 2px #c92a2a,
-    4px 4px 1px #1864ab;
+  text-shadow: -0.1rem -0.1rem 0.4rem #d9480f, 0.2rem -0.2rem 0.3rem #2b8a3e,
+    -0.3rem 0.3rem 0.2rem #c92a2a, 4px 4px 1px #1864ab;
 }
 
 .nav-section_logo a:link,
 .nav-section_logo a:visited {
-  margin-left: 20px;
+  margin-left: 2rem;
   color: #fff5f5;
-  text-shadow: -2px -2px 8px #1864ab, 4px -4px 6px #c92a2a, -6px 6px 4px #2b8a3e,
-    8px 8px 2px #d9480f;
+  text-shadow: -0.2rem -0.2rem 0.8rem #1864ab, 0.4rem -0.4rem 0.6rem #c92a2a,
+    -0.6rem 0.6rem 0.4rem #2b8a3e, 0.8rem 0.8rem 0.2rem #d9480f;
 }
 
 .nav-section_logo a:hover,
 .nav-section_logo a:active {
   color: #fff5f5;
-  text-shadow: -2px -2px 8px #d9480f, 4px -4px 6px #2b8a3e, -6px 6px 4px #c92a2a,
-    8px 8px 2px #1864ab;
+  text-shadow: -0.2rem -0.2rem 0.8rem #d9480f, 0.4rem -0.4rem 0.6rem #2b8a3e,
+    -0.6rem 0.6rem 0.4rem #c92a2a, 0.8rem 0.8rem 0.2rem #1864ab;
 }
 
 .nav-section_spacer {
@@ -435,6 +440,10 @@ input[type="email"] {
 /* ***************** */
 
 @media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+
   nav {
     width: 1366px;
   }
