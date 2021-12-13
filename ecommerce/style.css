@@ -154,6 +154,23 @@ a:visited {
 /* LANDING PAGE */
 /* ************ */
 
+/* LANDING SECTION LINKS */
+/* ********************* */
+
+.featured-item a:link,
+.featured-item a:visited {
+  color: #fff5f5;
+  font-weight: 700;
+}
+.featured-item a:hover,
+.featured-item a:active {
+  color: #212529;
+  background-color: #fff5f5;
+}
+
+/* LANDING HERO */
+/* ************ */
+
 .hero-section_main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("img/people/Abbey_Andy_modelshoot01-100719-5858.jpeg");
