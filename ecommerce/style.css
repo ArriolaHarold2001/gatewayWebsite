@@ -24,6 +24,7 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   background-color: #fff5f5;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h5 {
 
 /* UNIVERSAL NAV */
 /* ************* */
-nav {
+.nav-section_main {
   padding: 1rem;
   background-color: #fff5f5;
   border-bottom: 0.2rem solid #f03e3e;
@@ -52,13 +53,22 @@ nav {
   font-weight: 600;
   position: fixed;
   width: 100%;
+  height: 6vh;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav a:last-child {
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-section_menu {
+  display: none;
+}
+
+.nav-section_main a:last-child {
   margin-right: 2rem;
 }
 
@@ -538,11 +548,41 @@ input[type="email"] {
 /* 540PX */
 @media screen and (max-width: 34em) {
   html {
-    /* font-size: 50%; */
-    /* font-size: 43.75%; */
     font-size: 37.5%;
   }
-  .nav-section_main-mobile {
-    background-color: red;
+  .nav-section_main {
+    justify-content: center;
+  }
+  .nav-section_spacer {
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+
+    flex-direction: column;
+    gap: 10rem;
+    padding: min(30vh, 30rem) 10rem;
+    background-color: #fff5f5;
+
+    transform: translate(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .nav-section_spacer[data-visible="true"] {
+    transform: translate(0%);
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    width: 5rem;
+    aspect-ratio: 1;
+    top: 1rem;
+    right: 4rem;
+  }
+
+  .nav-section_main a:last-child {
+    margin: 0;
   }
 }

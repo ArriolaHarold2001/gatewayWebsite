@@ -17,11 +17,27 @@
     <!-- ************* -->
     <!-- UNIVERSAL NAV -->
     <!-- ************* -->
-    <nav class="nav-section_main">
+
+    <button class="mobile-nav-toggle">
+      <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      class="mobile-nav_logo" 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      stroke="currentColor">
+      <path 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+      stroke-width="2" 
+      d="M4 6h16M4 12h16M4 18h16" 
+      />
+    </svg>
+  </button>
+    <nav class="nav-section_main nav-section_main-mobile" >
       <div class="nav-section_logo">
       <a href="index.html">NucaPrints</a>
     </div>
-    <div class="nav-section_spacer">
+    <div class="nav-section_spacer" data-visible="false">
       <a href="index.html">Home</a>
       <a href="product.html">Shop</a>
       <a href="contact.html">Contact</a>
@@ -173,16 +189,6 @@
           </blockquote>
         </div>
 
-        <div class="testimonial-item testimonial-item--04">
-          <img
-            src="/img/people/Abbey_Andy_modelshoot01-100719-5669.jpeg"
-            alt="image of couple in car" class="testimonial-img"
-          />
-          <blockquote>
-            <p>Name of person</p>
-            <p>Testimonial/Quote</p>
-          </blockquote>
-        </div>
       </section>
     </main>
 
