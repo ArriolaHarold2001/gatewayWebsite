@@ -22,5 +22,4 @@ dropdownToggle.addEventListener("click", function () {
   } else {
     dropdownContent.setAttribute("data-visible", false);
   }
-  console.log(dropDownVisibility);
 });
